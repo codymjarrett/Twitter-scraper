@@ -1,4 +1,4 @@
-# workcation
+# Vue_Tailwind_starter
 
 ## Project setup
 ```
