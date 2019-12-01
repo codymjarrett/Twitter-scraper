@@ -1,4 +1,4 @@
-# Vue_Tailwind_starter
+# Twitter-scraper
 
 ## Project setup
 ```
