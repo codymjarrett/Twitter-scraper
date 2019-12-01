@@ -22,17 +22,24 @@ const func = async () => {
 			document.querySelector('.ProfileAvatar').firstElementChild.children[0].src
 	)
 
-	// console.log(
-	// 	`Currently following ${twFollowing} people with ${twFollowers} followers`
-	// )
-	// console.log(`${avatar} src`)
+	const twProfileName = await page.evaluate(
+		() =>
+			document.querySelector('.ProfileHeaderCard').firstElementChild.children[0].innerText
+	)
+	const twHandler = await page.evaluate(
+		() =>
+			document.querySelector('.ProfileHeaderCard').children[1].firstElementChild
+				.children[0].innerText
+	)
 
-    await browser.close()
-    
+	await browser.close()
+
 	return {
+        twProfileName,
+        twHandler,
+		avatar,
 		twFollowing,
 		twFollowers,
-		avatar,
 	}
 }
 
