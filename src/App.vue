@@ -1,14 +1,21 @@
 <template>
-	<div id="app" class="bg-gray-100 text-center p-6">
-		Hello App 
-	</div>
+  <div class="container mx-auto">
+    <Search />
+	<Profile />
+  </div>
 </template>
 
 <script>
+import Search from "./components/Search";
+import Profile from "./components/Profile";
+
 export default {
-	name: 'app',
-	components: {},
-}
+  name: "app",
+  components: {
+	Search,
+	Profile
+  }
+};
 </script>
 
 <style src="./assets/css/tailwind.css"></style>
