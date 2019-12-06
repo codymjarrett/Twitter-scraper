@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col justify-center items-center">
+  <div class="flex flex-col justify-center items-center h-screen w-full ">
     <label>Enter Twitter Name</label>
     <input type="text" class="bg-gray-300 border-b-2 border-gray-400 p-2" v-model="searchInput" />
-    <Profile :search="searchInput" v-on:reset-search="resetSearch" />
+    <app-profile :search="searchInput" v-on:reset-search="resetSearch"></app-profile>
   </div>
 </template>
 
@@ -12,7 +12,7 @@ import Profile from "./Profile";
 export default {
   name: "Search",
   components: {
-    Profile
+    "app-profile": Profile
   },
   data() {
     return {

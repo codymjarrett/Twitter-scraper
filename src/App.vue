@@ -1,6 +1,6 @@
 <template>
-  <div class="container mx-auto">
-    <Search />
+  <div class="container mx-auto ">
+    <app-search></app-search>
   </div>
 </template>
 
@@ -10,7 +10,7 @@ import Search from "./components/Search";
 export default {
   name: "app",
   components: {
-	Search,
+	'app-search': Search,
   }
 };
 </script>
